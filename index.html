@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Testimonials grid section</title>
+  <link rel="stylesheet" href="style.css"> <!-- Asegúrate de crear este archivo -->
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="testimonial-grid">
+    <article class="testimonial-card testimonial-daniel">
+      <header class="card-header">
+        <img src="./images/image-daniel.jpg" alt="Daniel Clifford" class="profile-img">
+        <div>
+          <h2 class="name">Daniel Clifford</h2>
+          <p class="status">Graduado Verificado</p>
+        </div>
+      </header>
+      <p class="testimonial-title">Recibí una oferta de trabajo a mitad del curso, y las asignaturas que aprendí estaban actualizadas, si no más, en la empresa a la que me uní. Sinceramente, siento que valió cada céntimo.</p>
+      <p class="testimonial-body">“ Fui Técnico de Emergencias Médicas durante muchos años antes de unirme al bootcamp. He estado buscando hacer una transición y he oído a algunas personas que tuvieron una experiencia increíble aquí. ¡Me inscribí en el curso de introducción gratuito y me pareció increíblemente divertido! Me matriculé poco después. Las siguientes 12 semanas fueron el mejor -y más agotador- momento de mi vida. Desde que completé el curso, he cambiado de carrera con éxito, trabajando como Ingeniero de Software en una startup de RV. ”</p>
+    </article>
+
+    <article class="testimonial-card testimonial-jonathan">
+      <header class="card-header">
+        <img src="./images/image-jonathan.jpg" alt="Jonathan Walters" class="profile-img">
+        <div>
+          <h2 class="name">Jonathan Walters</h2>
+          <p class="status">Graduado Verificado</p>
+        </div>
+      </header>
+      <p class="testimonial-title">El equipo fue de gran apoyo y me mantuvo motivado</p>
+      <p class="testimonial-body">“ Empecé como un novato total sin prácticamente ninguna habilidad de codificación. Ahora trabajo como ingeniero móvil para una gran empresa. Esta fue una de las mejores inversiones que he hecho en mí mismo. ”</p>
+    </article>
+
+    <article class="testimonial-card testimonial-jeanette">
+      <header class="card-header">
+        <img src="./images/image-jeanette.jpg" alt="Jeanette Harmon" class="profile-img">
+        <div>
+          <h2 class="name">Jeanette Harmon</h2>
+          <p class="status">Graduada Verificada</p>
+        </div>
+      </header>
+      <p class="testimonial-title">Una experiencia maravillosa y gratificante en general</p>
+      <p class="testimonial-body">“ ¡Gracias por la maravillosa experiencia! Ahora tengo un trabajo que realmente disfruto, y me gano bien la vida haciendo algo que amo. ”</p>
+    </article>
+
+    <article class="testimonial-card testimonial-patrick">
+      <header class="card-header">
+        <img src="./images/image-patrick.jpg" alt="Patrick Abrams" class="profile-img">
+        <div>
+          <h2 class="name">Patrick Abrams</h2>
+          <p class="status">Graduado Verificado</p>
+        </div>
+      </header>
+      <p class="testimonial-title">Impresionante apoyo docente de los TA que hicieron el bootcamp ellos mismos. Recibí orientación siempre que la necesité.</p>
+      <p class="testimonial-body">“ El personal parece genuinamente preocupado por mi progreso, lo cual encuentro muy refrescante. El programa me dio la confianza necesaria para poder salir al mundo y presentarme como un desarrollador junior capaz. El estándar está por encima del resto. Recibirás la atención personalizada que necesitas de una increíble comunidad de gente inteligente y asombrosa. ”</p>
+    </article>
+
+    <article class="testimonial-card testimonial-kira">
+      <header class="card-header">
+        <img src="./images/image-kira.jpg" alt="Kira Whittle" class="profile-img">
+        <div>
+          <h2 class="name">Kira Whittle</h2>
+          <p class="status">Graduada Verificada</p>
+        </div>
+      </header>
+      <p class="testimonial-title">Una experiencia que cambia la vida. ¡Altamente recomendado!</p>
+      <p class="testimonial-body">“ Antes de unirme al bootcamp, nunca había escrito una línea de código. Necesitaba algo de estructura de profesionales que pudieran ayudarme a aprender programación paso a paso. Me animó a inscribirme una antigua alumna suya que solo puede decir cosas maravillosas sobre el programa. Todo el plan de estudios y el personal no defraudaron. Fueron muy prácticos y nunca tuve que esperar mucho para recibir ayuda. El proyecto de equipo ágil, en particular, fue sobresaliente. Llevó mi aprendizaje al siguiente nivel de una manera que ningún tutorial podría haberlo hecho. De hecho, a menudo me he referido a él durante las entrevistas como ejemplo de mi experiencia de desarrollo. Ciertamente me ayudó a conseguir un trabajo como desarrollador full-stack después de recibir múltiples ofertas. ¡100% recomendable! ”</p>
+    </article>
+  </main>
+  
+  <div class="attribution">
+    Desafío por <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Codificado por <a href="#">Tu Nombre Aquí</a>. <!-- Puedes cambiar "Tu Nombre Aquí" por tu nombre real o tu usuario -->
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="testimonialModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h3 id="modalTitle">Título del Testimonio</h3>
+      <p id="modalBody">Aquí iría el contenido completo del testimonio o información adicional.</p>
+      <div class="modal-author-info">
+        <img id="modalAuthorImage" src="" alt="Imagen del autor del testimonio" class="profile-img">
+        <div>
+          <p id="modalAuthorName" class="name">Nombre del Autor</p>
+          <p id="modalAuthorStatus" class="status">Estado</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+  <!-- Vanta.js Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.VANTA) {
+        window.VANTA.FOG({
+          el: "body", // Aplicar al body para que sea el fondo general
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          highlightColor: 0xccb3f5,  // Aproximación de Purple 300 hsl(264, 82%, 80%)
+          midtoneColor: 0x6A4C9C,    // Purple 500 hsl(263, 55%, 52%) - Ajustado para mayor precisión
+                                     // El valor 0xb298e3 que tenías es más claro.
+          lowlightColor: 0xefe5ff,   // Aproximación de Purple 50 hsl(260, 100%, 95%)
+          baseColor: 0xe8eef2,       // Aproximación de Grey 100 hsl(214, 17%, 92%) (Fondo actual del body)
+          blurFactor: 0.60,
+          speed: 1.5,
+          zoom: 0.8
+        });
+      }
+    });
+  </script>
+</body>
+</html>
